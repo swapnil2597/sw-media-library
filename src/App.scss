@@ -1,0 +1,21 @@
+.videoDetailMain__title {
+    word-break: break-word;
+    font-family: "YouTube Sans","Roboto",sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.videoDetailMain__discBox {
+    // width: 95%;
+    border-radius: 12px;
+    background: #333;
+    padding: 20px;
+    color: #ccc;
+    flex: 1;
+    flex-basis: 1e-9px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}

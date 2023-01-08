@@ -1,0 +1,27 @@
+.main__titleSection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    // background: rgb(126, 126, 122);
+
+    .title {
+        // margin-bottom: 20px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .tag {
+        color: #a6180e;
+        margin-left: 8px;
+    }
+}
+
+
+.feedCardWrapper {
+    :hover {
+        scale: 1.05;
+        transition: all 0.2s ease-in-out;
+    }
+}
