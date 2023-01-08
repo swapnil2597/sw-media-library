@@ -6,45 +6,45 @@ import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 import { Avatar } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 
-const motionContainer = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
+// const motionContainer = {
+//     hidden: { opacity: 1, scale: 0 },
+//     visible: {
+//       opacity: 1,
+//       scale: 1,
+//       transition: {
+//         delayChildren: 0.3,
+//         staggerChildren: 0.2
+//       }
+//     }
+//   };
   
-  const motionItem = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  };
+//   const motionItem = {
+//     hidden: { y: 20, opacity: 0 },
+//     visible: {
+//       y: 0,
+//       opacity: 1
+//     }
+//   };
 
 function Media({loading, videosList}) {
 //   const { loading = false } = loading;
 
   return (
-      <motion.ul
-  className="motionContainer"
-  variants={motionContainer}
-  initial="hidden"
-  animate="visible"
->
+//       <motion.ul
+//   className="motionContainer"
+//   variants={motionContainer}
+//   initial="hidden"
+//   animate="visible"
+// >
     <Grid m="auto" container wrap="wrap" sx={{
         justifyContent: "space-evenly"
     }}>
 
       {(loading ? Array.from(new Array(50)) : videosList)?.map((item, index) => (
-        <motion.li key={index} className="item" variants={motionItem}>
+        // <motion.li key={index} className="item" variants={motionItem}>
             <div className='feedCardWrapper' >
                     <Box key={index} sx={{ width: 358,  my: 5, borderRadius: "12px", cursor:"pointer", mx:1  }}>
                     {item ? (
@@ -101,10 +101,10 @@ function Media({loading, videosList}) {
                     )}
                     </Box>
             </div>
-      </motion.li>
+    //   </motion.li>
       ))}
     </Grid>
-    </motion.ul>
+    // </motion.ul>
   );
 }
 

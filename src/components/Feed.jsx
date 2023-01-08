@@ -28,10 +28,10 @@ const Feed = () => {
   const [videosList, setVideosList] = useState([]);
 
   useEffect(() => {
-    youtubeAPI.getSuggestedVideos().then((data) => {
+    youtubeAPI.getSearchResults(selectedCategory).then((data) => {
       setVideosList(data?.items);
     });
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <Stack
@@ -65,7 +65,9 @@ const Feed = () => {
             // mb: 1.5
           }}
         >
-          Copyrights 2023 swapnil2597
+          Copyrights 2023 <a style={{
+            color: '#aaa'
+          }} href='https://www.swapnilk.ml/' target="_blank" rel="noreferrer" >swapnil2597</a>
         </Typography>
       </Box>
 

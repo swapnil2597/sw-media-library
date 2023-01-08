@@ -40,7 +40,7 @@ const VideoDetail = () => {
             }}
             
           >
-            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls className="react-player" />
+            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls className="react-player" playing={true} />
             <h1 style={{marginLeft: "10px"}} className='videoDetailMain__title' >{videoDetail?.snippet?.title}</h1>
           </Box>
           <div className='videoDetailMain__discBox' >{videoDetail?.snippet?.description}</div>
